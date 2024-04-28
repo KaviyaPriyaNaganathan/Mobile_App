@@ -1,0 +1,285 @@
+* {
+  background-color: white;
+  color: #000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color:#eee;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.topmenu
+{
+  background-color: #000;
+}
+.navbar {
+  
+  padding: 10px 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.section {
+  padding: 20px 0;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.buttons-container > div {
+  margin-right: 10px; /* Adjust margin between buttons */
+}
+
+.active-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.inactive-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .buttons-container {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    align-items: center;
+  }
+
+  .buttons-container > div {
+    margin-bottom: 10px; /* Adjust margin between buttons on smaller screens */
+    margin-right: 0; /* Reset right margin */
+  }
+}
+
+
+.carousel-slide {
+  display: flex;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.slide.active {
+  display: block;
+  transform: translateX(0);
+}
+
+.slide.next {
+  display: block;
+  transform: translateX(100%);
+}
+
+.slide.prev {
+  display: block;
+  transform: translateX(-100%);
+}
+
+.carousel-button {
+  margin: 0 10px;
+  padding: 5px 5px;
+  font-size: 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.centering {
+  align-items: center;
+}
+
+.Menu {
+  &:hover {
+    padding: 12px;
+    border: 1px solid blue;
+  }
+}
+
+.scorecards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.scorecard h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+table {
+  width: calc(100% - 20px);
+  border-collapse: collapse;
+}
+
+table th, table td {
+  padding: 8px;
+  text-align: left;
+}
+
+table th {
+  font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  .scorecard {
+    max-width: calc(100% - 20px);
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.scorecards-container {
+  display: flex;
+  justify-content: center;
+}
+
+.scorecard {
+  margin-bottom: 20px;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cskScorecard,
+.rcbScorecard {
+  font-family: "Times New Roman", Times, serif;
+  border: 1px solid black;
+  background-color: #eee;
+  width: 350px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.cskScorecard .divTableCell,
+.rcbScorecard .divTableCell,
+.cskScorecard .divTableHead {
+  border: 1px solid black;
+  padding: 8px 10px;
+}
+
+.cskScorecard .divTableBody .divTableCell,
+.rcbScorecard .divTableBody .divTableCell {
+  font-size: 13px;
+}
+
+.cskScorecard .divTableHeading .divTableHead,
+.rcbScorecard .divTableHeading .divTableHead {
+  font-size: 19px;
+  font-weight: bold;
+  color: #000;
+  background: #eee;
+  text-align: left;
+  border-left: 1px solid black;
+}
+
+.cskScorecard .divTableHeading .divTableHead:first-child,
+.rcbScorecard .divTableHeading .divTableHead:first-child {
+  border-left: none;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.active-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.inactive-button {
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active-button:focus,
+.inactive-button:focus {
+  outline: none;
+}
+
+
+.header {
+  background-color: black; /* Change background color to black */
+  color: #fff; /* Change text color to white */
+  padding: 10px 0;
+  text-align: center;
+}
+
+.left-menu {
+  display: flex;
+  align-items: center;
+}
+
+.left-menu-text {
+  color: white; /* Set text color to white */
+  padding: 0 20px;
+}
